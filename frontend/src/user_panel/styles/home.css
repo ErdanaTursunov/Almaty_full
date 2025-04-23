@@ -1,0 +1,74 @@
+.mainBackground {
+    background: linear-gradient(to bottom, #004D3D, #00B38E);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    padding: 60px 0;
+    height: 480px;
+    z-index: 0;
+}
+
+.ornamentLeft,
+.ornamentRight {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    width: 65px;
+    background-image: url(../images/ornamentMain.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ornamentLeft {
+    left: 0;
+}
+
+.ornamentRight {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.ornamentLeft img,
+.ornamentRight img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.user-panel-content {
+    text-align: center;
+    max-width: 600px;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.quote,
+.quote.typewriter {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'PlumbKaz-Bold';
+}
+
+.author {
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'PlumbKaz-Regular';
+}
+
+.typewriter::after {
+    content: '|';
+    animation: blink 1s infinite;
+    margin-left: 5px;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }

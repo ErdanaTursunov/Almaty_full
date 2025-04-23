@@ -1,0 +1,30 @@
+/* Импорт всех стилей */
+@import './variables.css';
+@import './global.css';
+@import './header.css';
+@import './home.css';
+@import './content.css';
+@import './newBooks.css';
+@import './eventSlider.css';
+@import './news.css';
+@import './footer.css';
+@import './questions.css';
+@import './allnews.css';
+@import './newsdetail.css';
+@import './BookDetail.css';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: var(--font-size-md);
+  line-height: 1.5;
+  color: var(--text-dark);
+  background-color: var(--background-main);
+}

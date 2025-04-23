@@ -1,0 +1,55 @@
+.content-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button-catalog,
+.button-ticket,
+.button-question {
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px !important;
+    transition: background-color 0.3s, transform 0.3s;
+    background: linear-gradient(180deg, #00B38E -1.82%, #004D3D 98.18%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'PlumbKaz-Bold' !important;
+    line-height: 1.2 !important;
+    padding: 10px 20px !important;
+}
+
+.button-catalog {
+    width: 340px;
+    height: 80px;
+}
+
+.button-ticket {
+    width: 555px;
+    height: 100px;
+}
+
+.button-question {
+    width: 340px;
+    height: 80px;
+}
+
+.button-catalog svg,
+.button-ticket svg,
+.button-question svg {
+    margin-bottom: 10px;
+}
+
+.button-catalog:hover,
+.button-ticket:hover,
+.button-question:hover {
+    background-color: #007C5B;
+    transform: scale(1.05);
+}

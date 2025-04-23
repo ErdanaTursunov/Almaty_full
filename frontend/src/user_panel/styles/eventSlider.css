@@ -1,0 +1,60 @@
+.event-slider-section {
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+  
+  .event-carousel {
+    padding: 0 10px;
+    margin-bottom: 50px;
+  }
+  
+  .event-card {
+    background-color: #e0e0e0;
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .event-date {
+    color: #124734;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .event-description {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  .event-title-line {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+    gap: 15px;
+  }
+  
+  .slider-title {
+    font-size: 20px;
+    color: #004D3D;
+    white-space: nowrap;
+    font-family: PlumbKaz-Regular;
+    position: relative;
+  }
+  
+  .line-events {
+    flex: 1;
+    height: 2px;
+    background-color: #004D3D;
+    opacity: 0.5;
+  }
+  
+  

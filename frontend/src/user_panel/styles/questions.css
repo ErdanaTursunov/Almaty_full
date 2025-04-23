@@ -1,0 +1,264 @@
+.questions-container {
+  display: flex;
+  gap: 24px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  min-height: 70vh;
+}
+
+.content-questions {
+  margin-top: 15px;
+  flex: 1;
+}
+
+.sidebar-questions {
+  width: 280px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: #004D3D;
+}
+
+.categories-scroll {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 16px;
+  padding-right: 8px;
+}
+
+.categories-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.categories-scroll::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.ask-question-btn {
+  background-color: #3E7B67;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.ask-question-btn:hover {
+  background-color: #346856;
+}
+
+.category-item {
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+  font-size: 15px;
+  color: white;
+}
+
+.category-item:hover {
+  background-color: white;
+  color: #004D3D;
+}
+
+.search-container {
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 12px 16px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.search-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.keyboard-icon, .search-icon {
+  cursor: pointer;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.keyboard-icon:hover, .search-icon:hover {
+  color: #333;
+}
+
+.divider {
+  width: 1px;
+  height: 24px;
+  background-color: #e0e0e0;
+}
+
+.virtual-keyboard {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-top: 8px;
+  z-index: 1000;
+}
+
+.keyboard-row {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 4px;
+  justify-content: center;
+}
+
+.keyboard-key {
+  min-width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.keyboard-key:hover {
+  background: #f5f5f5;
+}
+
+.question-item {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.question-item.expanded {
+  margin-bottom: 24px;
+}
+
+.question-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+.category-tag {
+  background: #f0f0f0;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+  color: #444;
+}
+
+.question-content {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.toggle-answer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #3E7B67;
+  cursor: pointer;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+
+.answer {
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+.answer.visible {
+  display: block;
+  padding: 16px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.671);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.modal {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  width: 500px;
+
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal input,
+.modal textarea {
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.modal textarea {
+  min-height: 120px;
+}
+
+.modal button {
+  background-color: #3E7B67;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,113 @@
+.news-section {
+    margin-bottom: 40px;
+}
+  
+  .newsMain {
+    font-size: 20px;
+    color: #004D3D;
+    font-family: PlumbKaz-Regular;
+    position: relative;
+  }
+  
+  .news-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .news-title-line {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 30px;
+    gap: 15px;
+  }
+
+  .line-news {
+    flex: 1;
+    height: 2px;
+    background-color: #004D3D;
+    opacity: 0.5;
+  }
+  
+  
+  .view-all-button {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 40px;
+    background: transparent;
+    border: 2px solid #004D3D;
+    color: #004D3D;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .view-all-button:hover {
+    background: #004D3D;
+    color: white;
+  }
+  
+  .news-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 400px;
+  }
+  
+  .news-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .news-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+  
+
+  .news-date {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .news-title {
+    color: #004D3D;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    min-height: 50px;
+  }
+  
+  .news-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .news-category {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .instagram-link {
+    width: 15px;
+    height: 15px;
+    background: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg') no-repeat center;
+    display: block;
+  }

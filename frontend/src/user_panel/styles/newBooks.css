@@ -1,0 +1,125 @@
+.newbooks-section {
+  position: relative;
+  background-image: url('../images/bg.png');
+  background-size: cover;
+  background-color: #004d3ed1;
+  background-position: center;
+  color: white;
+  overflow: hidden;
+  height: 710px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #004d3ee9;
+  backdrop-filter: blur(4px);
+  z-index: 0;
+}
+
+.newbooks-title-line {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+.newbooks-title {
+  font-size: 20px;
+  color: #DECD90;
+  white-space: nowrap;
+  font-family: PlumbKaz-Regular;
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background-color: #DECD90;
+  opacity: 0.5;
+}
+
+.newbooks-carousel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+
+.book-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.book-image {
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.book-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.book-description {
+  font-size: 14px;
+  color: #555;
+}
+
+.nav-button {
+  position: absolute;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  font-size: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background: transparent;
+}
+
+.nav-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+.prev {
+  left: -80px;
+}
+
+.next {
+  right: -80px;
+}
+
+
+.swiper {
+  width: 100%;
+}
